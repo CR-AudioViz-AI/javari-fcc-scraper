@@ -9,57 +9,57 @@ const APP_CONFIGS: Record<string, {
   name: string
   category: 'creative' | 'business' | 'analysis' | 'developer' | 'gaming'
 }> = {
-  'crav-ebook-creator': {
+  'javari-ebook-creator': {
     id: 'ebook-creator',
     name: 'eBook Creator',
     category: 'creative'
   },
-  'crav-logo-studio': {
+  'javari-logo-studio': {
     id: 'logo-studio',
     name: 'Logo Studio',
     category: 'creative'
   },
-  'crav-site-builder': {
+  'javari-site-builder': {
     id: 'site-builder',
     name: 'Site Builder',
     category: 'creative'
   },
-  'crav-pdf-builder': {
+  'javari-pdf-builder': {
     id: 'pdf-builder',
     name: 'PDF Builder',
     category: 'business'
   },
-  'crav-builder': {
+  'javari-builder': {
     id: 'builder',
     name: 'Document Builder',
     category: 'business'
   },
-  'crav-legalease': {
+  'javari-legalease': {
     id: 'legalease',
     name: 'LegalEase',
     category: 'business'
   },
-  'crav-market-oracle': {
+  'javari-market-oracle': {
     id: 'market-oracle',
     name: 'Market Oracle',
     category: 'analysis'
   },
-  'crav-news-compare': {
+  'javari-news-compare': {
     id: 'news-compare',
     name: 'News Compare',
     category: 'analysis'
   },
-  'crav-competitive-intelligence': {
+  'javari-competitive-intelligence': {
     id: 'competitive-intelligence',
     name: 'Competitive Intelligence',
     category: 'analysis'
   },
-  'crav-games': {
+  'javari-games': {
     id: 'games',
     name: 'Games Platform',
     category: 'gaming'
   },
-  'crav-javari': {
+  'javari-javari': {
     id: 'javari',
     name: 'Javari AI',
     category: 'developer'
@@ -89,7 +89,7 @@ const APP_CONFIGS: Record<string, {
     name: 'MDN Scraper',
     category: 'developer'
   },
-  'crav-website': {
+  'javari-website': {
     id: 'main-website',
     name: 'CR AudioViz AI Website',
     category: 'business'
