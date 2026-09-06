@@ -281,7 +281,7 @@ export class FCCScraper {
       // Get or create knowledge source
       if (!this.sourceId) {
         const { data: source } = await supabaseAdmin
-          .from('knowledge_sources')
+          .from('javari_knowledge_sources')
           .select('id')
           .eq('url', FCC_BASE)
           .single()
