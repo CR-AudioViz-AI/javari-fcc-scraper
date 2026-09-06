@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
     let sourceId: string
 
     const { data: existingSource } = await supabaseAdmin
-      .from('knowledge_sources')
+      .from('javari_knowledge_sources')
       .select('id')
       .eq('url', 'https://www.freecodecamp.org')
       .single()
@@ -32,7 +32,7 @@ export async function POST(request: NextRequest) {
       sourceId = existingSource.id
     } else {
       const { data: newSource, error: createError } = await supabaseAdmin
-        .from('knowledge_sources')
+        .from('javari_knowledge_sources')
         .insert({
           name: 'FreeCodeCamp',
           source_type: 'tutorial',
@@ -148,7 +148,7 @@ async function scrapeInBackground(jobId: string, certSlug: string, sourceId: str
 
     // Update source last_scraped_at
     await supabaseAdmin
-      .from('knowledge_sources')
+      .from('javari_knowledge_sources')
       .update({ last_scraped_at: new Date().toISOString() })
       .eq('id', sourceId)
   } catch (error) {
